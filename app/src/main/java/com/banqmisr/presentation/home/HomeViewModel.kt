@@ -37,8 +37,7 @@ class HomeViewModel @Inject constructor(
     private var amount = "1"
 
     private var selectedPosition: Pair<String, Double> = Pair("", 0.0)
-    val fromCurrencyPosition  = 0
-    val toCurrencyPosition = 0
+
     init {
         getLatestCurrency()
     }

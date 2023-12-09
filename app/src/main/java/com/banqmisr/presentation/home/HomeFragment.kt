@@ -119,7 +119,7 @@ class HomeFragment : Fragment() {
 
 
         binding.spinnerFrom.adapter = fromCurrencyAdapter
-        binding.spinnerFrom.setSelection(viewModel.fromCurrencyPosition, false)
+        binding.spinnerFrom.setSelection(0, false)
         viewModel.setSelectedItem(data.ratesNames.toList()[0])
 
         binding.spinnerFrom.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
@@ -146,7 +146,7 @@ class HomeFragment : Fragment() {
         )
 
         binding.spinnerTo.adapter = toCurrencyAdapter
-        binding.spinnerTo.setSelection(viewModel.toCurrencyPosition, false)
+        binding.spinnerTo.setSelection(0, false)
         binding.spinnerTo.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
             override fun onItemSelected(
                 parent: AdapterView<*>,
